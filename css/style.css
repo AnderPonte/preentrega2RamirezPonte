@@ -1,0 +1,521 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "DM Sans", "sans-serif";
+}
+
+/* HOME PAGE */
+
+/* barra de nav */
+
+.navbar-toggler {
+  background-color: rgb(242, 241, 241);
+}
+
+/* Carrusel de fotos */
+
+.carousel {
+  background-image: url(../images/portada/portada.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel h1 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* .carousel-slides {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slides img {
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+} */
+
+/* Seccion de Beats */
+.beats-section {
+  /* background-color: #d9d9d9; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  height: 64vh;
+
+  background: rgb(50, 116, 114);
+  background: linear-gradient(
+    348deg,
+    rgba(50, 116, 114, 1) 0%,
+    rgba(70, 134, 139, 1) 28%,
+    rgba(202, 233, 236, 1) 100%
+  );
+}
+
+.beats-titulo {
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 40px;
+
+  transition: 1s;
+}
+
+.beats-titulo:hover {
+  transform: rotate(25deg);
+}
+
+.beats-section p {
+  padding: 40px 40px 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.beats-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.beats-button-escuchar {
+  /* height: 50px; */
+  width: 100%;
+  padding: 8px 16px 8px;
+
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(246, 246, 246);
+  background-color: rgb(74, 74, 74);
+}
+
+/* Seccion de Servicios */
+
+.servicios-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px 80px;
+}
+
+.servicios-titulo {
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 40px;
+
+  transition: 1s;
+}
+
+.servicios-titulo:hover {
+  transform: rotate(25deg);
+}
+
+/* Footer */
+
+footer {
+  padding: 28px 76px 69px;
+  background-color: #d9d9d9;
+}
+
+.footer-1strow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 52px;
+}
+
+.footer-siguenos h4,
+.footer-contacto h4 {
+  font-size: 22px;
+  padding-bottom: 18px;
+}
+
+.footer-icon-rrss {
+  display: flex;
+  gap: 17px;
+}
+
+.footer-contacto p {
+  padding-bottom: 14px;
+}
+
+.footer-2ndrow-line hr {
+  margin-bottom: 18px;
+  border: 1px solid black;
+}
+
+.footer-3rdrow-Creditos {
+  text-align: center;
+}
+
+/* BEATS PAGE */
+
+.beats-titulo {
+  padding: 20px 417px 30px;
+  text-align: center;
+}
+
+.beats-titulo h1 {
+  font-size: 30px;
+}
+
+/* Reggaeton Section */
+.reggaeton-section {
+  padding: 30px 66px 80px;
+}
+
+.reggaeton-section h2 {
+  padding-bottom: 15px;
+  font-size: 26px;
+}
+
+.reggaeton-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feid-card,
+.rauwalejandro-card,
+.myketowers-card {
+  padding: 25px;
+}
+
+.feid-card-descri,
+.rauw-card-descri,
+.myke-card-descri {
+  padding: 28px 0px 16px;
+  font-size: 18px;
+}
+
+.feid-card p,
+.rauwalejandro-card p,
+.myketowers-card p {
+  font-size: 22px;
+}
+
+.reggaeton-button {
+  text-align: center;
+  padding-top: 54px;
+}
+
+.reggaeton-section button {
+  width: 273px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+  font-size: 24px;
+}
+
+/* R&b/Trap Section */
+.rnb-section {
+  padding: 30px 66px 80px;
+}
+
+.rnb-section h2 {
+  padding-bottom: 15px;
+  font-size: 26px;
+}
+
+.rnb-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sza-card,
+.Theweeknd-card,
+.drake-card {
+  padding: 25px;
+}
+
+.sza-card-descri,
+.Theweeknd-card-descri,
+.drake-card-descri {
+  padding: 28px 0px 16px;
+  font-size: 18px;
+}
+
+.sza-card p,
+.Theweeknd-card p,
+.drake-card p {
+  font-size: 22px;
+}
+
+.rnb-button {
+  text-align: center;
+  padding-top: 54px;
+}
+
+.rnb-section button {
+  width: 273px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+  font-size: 24px;
+}
+
+/* SERVICIOS PAGE */
+.servicios-portada {
+  background-image: url(../images/services/serviciosportada.jpg);
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.968;
+}
+
+.servicios-pagina-titulo {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+
+  transition: 1s;
+}
+
+.servicios-pagina-titulo:hover {
+  transform: rotate(18deg);
+}
+/* seccion de grabacion */
+
+.grabacion-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
+  padding: 35px;
+}
+
+.grabacion-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* .grabacion-texto {
+  display: flex;
+  flex-direction: column;
+} */
+
+.grabacion-texto h4 {
+  font-size: 34px;
+  padding-bottom: 18px;
+}
+
+.grabacion-texto p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+.grabacion-button {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.grabacion-button button {
+  font-size: 32px;
+  padding: 12px 6px 12px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+}
+
+/* seccion de Produccion Musical */
+.produccionmusical-section {
+  background-color: #d9d9d9;
+
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
+  padding: 35px;
+}
+
+.produccionmusical-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.produccionmusical-texto h4 {
+  font-size: 34px;
+  padding-bottom: 18px;
+}
+
+.produccionmusical-texto p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+.produccionmusical-button {
+  text-align: center;
+  padding: 30px;
+}
+
+.produccionmusical-button button {
+  font-size: 32px;
+  padding: 12px 6px 12px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* seccion de Mezcla y Mastering */
+
+.mezclamastering-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
+  padding: 35px;
+}
+
+.mezclamastering-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.mezclamastering-texto h4 {
+  font-size: 34px;
+  padding-bottom: 18px;
+}
+
+.mezclamastering-texto p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+.mezclamastering-button {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.mezclamastering-button button {
+  font-size: 32px;
+  padding: 12px 6px 12px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+/* CONTACTO PAGE */
+
+.container-contact {
+  padding: 65px 198px 40px;
+}
+
+.container-contact h1 {
+  text-align: center;
+  padding-bottom: 92px;
+}
+.container-contact p {
+  text-align: center;
+}
+
+.contact {
+  padding: 60px 187px 63px;
+}
+
+.contact-container {
+  background-color: #d9d9d9;
+}
+
+.contact-tittle {
+  padding: 20px 0px 50px 40px;
+}
+
+/* Formulario de Contacto */
+.contact-form {
+  padding: 0px 83px 51px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 55px 55px 143px 63px;
+  grid-template-areas:
+    "nombre apellidos"
+    "email tel"
+    "textarea textarea"
+    "enviar enviar";
+  gap: 42px;
+}
+
+.contact-form input {
+  padding: 23px 20px;
+  border: none;
+}
+
+.textarea {
+  border: none;
+}
+
+.contact-form .nombre {
+  grid-area: nombre;
+}
+.contact-form .apellidos {
+  grid-area: apellidos;
+}
+.contact-form .email {
+  grid-area: email;
+}
+.contact-form .tel {
+  grid-area: tel;
+}
+.contact-form .textarea {
+  grid-area: textarea;
+}
+.contact-form .enviar {
+  grid-area: enviar;
+  width: 146px;
+  height: 63px;
+  justify-self: center;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 12px 40px;
+  font-size: 20px;
+}
+
+/* NOSOTROS PAGE */
+.nosotros-texto {
+  padding: 95px 175px 108px;
+  text-align: center;
+}
+
+.nosotros-texto h1 {
+  padding-bottom: 66px;
+  font-size: 34px;
+}
+/* .nosotros-imagen {
+  padding: 5px;
+} */
+
+.nosotros-imagen img {
+  width: 100%;
+}
