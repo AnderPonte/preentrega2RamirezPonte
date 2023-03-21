@@ -1,0 +1,158 @@
+.serviciospage {
+  background-image: url(../images/services/serviciosportada.jpg);
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.968;
+
+  &-title {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+    transition: 1s;
+
+    &:hover {
+      transform: rotate(18deg);
+    }
+  }
+
+  &-grabacion {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+    padding: 35px;
+
+    &-img img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    &-texto {
+      h4 {
+        font-size: 34px;
+        padding-bottom: 18px;
+      }
+      p {
+        font-size: 22px;
+        text-align: justify;
+      }
+    }
+
+    &-button {
+      text-align: center;
+      padding-top: 20px;
+
+      &-link {
+        font-size: 32px;
+        padding: 12px 6px 12px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #d9d9d9;
+
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &-produccion {
+    background-color: #d9d9d9;
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+    padding: 35px;
+
+    &-img img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    &-texto {
+      h4 {
+        font-size: 34px;
+        padding-bottom: 18px;
+      }
+      p {
+        font-size: 22px;
+        text-align: justify;
+      }
+    }
+
+    &-button {
+      text-align: center;
+      padding: 30px;
+
+      &-link {
+        font-size: 32px;
+        padding: 12px 6px 12px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.serviciospage-master {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+  padding: 35px;
+
+  &-img img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  &-texto {
+    h4 {
+      font-size: 34px;
+      padding-bottom: 18px;
+    }
+
+    p {
+      font-size: 22px;
+      text-align: justify;
+    }
+  }
+
+  &-button {
+    text-align: center;
+    padding-top: 40px;
+
+    &-link {
+      font-size: 32px;
+      padding: 12px 6px 12px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: #d9d9d9;
+      text-align: center;
+
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

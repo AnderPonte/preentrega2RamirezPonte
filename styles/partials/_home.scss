@@ -1,0 +1,101 @@
+.hero-home-beats {
+  background-image: url(../images/portada/portada.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-title {
+    color: $maincolor;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+    transition: 1s;
+
+    &:hover {
+      transform: rotate(18deg);
+    }
+  }
+}
+
+.beats-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #e5e6e8;
+
+  &-titulo {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 40px;
+
+    transition: 1s;
+    &:hover {
+      transform: rotate(25deg);
+    }
+  }
+
+  &-p {
+    padding: 40px 40px 15px;
+    text-align: justify;
+    font-size: 24px;
+  }
+}
+
+.beats-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+
+  &-escuchar {
+    width: 100%;
+    padding: 8px 16px 8px;
+
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: $maincolor;
+    background: rgb(50, 116, 114);
+    background: linear-gradient(
+      348deg,
+      rgba(50, 116, 114, 1) 0%,
+      rgba(70, 134, 139, 1) 28%,
+      rgba(202, 233, 236, 1) 100%
+    );
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.servicios-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  &-title {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 40px;
+
+    transition: 1s;
+
+    &:hover {
+      transform: rotate(25deg);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+footer {
+  padding: 28px;
+  background-color: $secondarycolor;
+
+  .footer-1strow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+
+    &-siguenos h4 {
+      font-size: 22px;
+      padding-bottom: 18px;
+    }
+
+    &-siguenos-rrss {
+      display: flex;
+      gap: 17px;
+    }
+    &-contacto {
+      h4 {
+        font-size: 22px;
+        padding-bottom: 18px;
+      }
+      p {
+        padding-bottom: 14px;
+      }
+    }
+  }
+}
+
+.footer-2ndrow-line hr {
+  margin-bottom: 18px;
+  border: 1px solid black;
+}
+
+.footer-3rdrow {
+  text-align: center;
+}
