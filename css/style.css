@@ -177,7 +177,7 @@ footer {
 }
 
 .genero-section {
-  padding: 40px;
+  padding: 16px;
 }
 
 .genero-section h2 {
@@ -187,8 +187,9 @@ footer {
 
 .genero-section-cards {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards {

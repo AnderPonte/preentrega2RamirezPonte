@@ -10,7 +10,7 @@
 }
 
 .genero-section {
-  padding: 40px;
+  padding: 16px;
 
   h2 {
     padding-bottom: 15px;
@@ -19,8 +19,9 @@
 
   &-cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   &-button {
@@ -40,8 +41,6 @@
 }
 
 .cards {
-  padding: 25px;
-
   &-descri {
     padding: 28px 0px 16px;
     font-size: 18px;
