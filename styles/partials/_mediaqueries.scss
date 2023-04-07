@@ -5,51 +5,74 @@
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   }
 
-  .contactpage-form {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 55px 55px 55px 55px 143px 63px;
-    grid-template-areas:
-      "nombre"
-      "apellidos"
-      "email"
-      "tel"
-      "textarea"
-      "enviar";
-    gap: 42px;
+  .section404 {
+    &-h2 {
+      font-size: 24px;
+    }
 
-    .nombre {
-      grid-area: nombre;
-      border: none;
+    &-link {
+      font-size: 24px;
     }
-    .apellidos {
-      grid-area: apellidos;
-      border: none;
+  }
+  .contact {
+    .contactportada {
+      h1 {
+        padding: 8px;
+        font-size: 19px;
+      }
+      p {
+        padding: 8px;
+        font-size: 19px;
+      }
     }
-    .email {
-      grid-area: email;
-      border: none;
-    }
-    .tel {
-      grid-area: tel;
-      border: none;
-    }
-    .textarea {
-      grid-area: textarea;
-      border: none;
-    }
-    .enviar {
-      grid-area: enviar;
-      width: 146px;
-      height: 63px;
-      justify-self: center;
-      border-radius: 10px;
-      background-color: white;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      padding: 12px 40px;
-      font-size: 20px;
-      border: none;
+    .contactpage {
+      .contactpage-form {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 55px 55px 55px 55px 143px 63px;
+        grid-template-areas:
+          "nombre"
+          "apellidos"
+          "email"
+          "tel"
+          "textarea"
+          "enviar";
+        gap: 42px;
+
+        .nombre {
+          grid-area: nombre;
+          border: none;
+        }
+        .apellidos {
+          grid-area: apellidos;
+          border: none;
+        }
+        .email {
+          grid-area: email;
+          border: none;
+        }
+        .tel {
+          grid-area: tel;
+          border: none;
+        }
+        .textarea {
+          grid-area: textarea;
+          border: none;
+        }
+        .enviar {
+          grid-area: enviar;
+          width: 146px;
+          height: 63px;
+          justify-self: center;
+          border-radius: 10px;
+          background-color: white;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          padding: 12px 40px;
+          font-size: 20px;
+          border: none;
+        }
+      }
     }
   }
 }
@@ -59,5 +82,92 @@
   .serviciospage-produccion,
   .serviciospage-master {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  .beats-section {
+    padding: 16px;
+    &-titulo {
+      padding-top: 16spx;
+      transition: 1s;
+      &:hover {
+        transform: rotate(25deg);
+      }
+    }
+
+    &-p {
+      padding: 8px;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+  .servicios-section {
+    padding: 16px;
+
+    &-title {
+      padding-top: 30px;
+      transition: 1s;
+
+      &:hover {
+        transform: rotate(25deg);
+      }
+    }
+  }
+
+  .beatmasescuchados {
+    .beats-img-section {
+      h1 {
+        padding: 16px;
+      }
+    }
+  }
+
+  .nosotrospage {
+    padding: 24px;
+
+    h1 {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+
+  .section404 {
+    &-h2 {
+      margin: 38px;
+    }
+  }
+  .contact {
+    .contactportada {
+      padding: 24px;
+      h1 {
+        padding: 8px;
+        font-size: 16px;
+      }
+      p {
+        padding: 8px;
+        font-size: 16px;
+      }
+    }
+
+    .contactpage {
+      &-form {
+        padding: 16px;
+      }
+    }
+  }
+
+  footer {
+    .footer-1strow {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: flex-start;
+    }
   }
 }

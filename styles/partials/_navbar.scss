@@ -1,3 +1,13 @@
+.nav-link {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  color: white;
+}
+
 .navbar-toggler {
-  background-color: $maincolor;
+  border-color: white;
+
+  &-icon {
+    color: white;
+  }
 }

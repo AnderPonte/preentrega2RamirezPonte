@@ -8,13 +8,23 @@ body {
   font-family: "DM Sans", "sans-serif";
 }
 
+.nav-link {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  color: white;
+}
+
 .navbar-toggler {
-  background-color: rgb(246, 246, 246);
+  border-color: white;
+}
+.navbar-toggler-icon {
+  color: white;
 }
 
 .hero-home-beats {
   background-image: url(../images/portada/portada.jpg);
   background-size: cover;
+  background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -38,12 +48,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background-color: #e5e6e8;
+  background: rgb(36, 39, 46);
+  background: linear-gradient(348deg, rgb(36, 39, 46) 0%, rgb(29, 46, 69) 85%, rgb(17, 53, 84) 100%);
 }
 .beats-section-titulo {
   padding-top: 30px;
   font-weight: bold;
   font-size: 40px;
+  color: white;
   transition: 1s;
 }
 .beats-section-titulo:hover {
@@ -51,8 +63,9 @@ body {
 }
 .beats-section-p {
   padding: 40px 40px 15px;
-  text-align: justify;
+  text-align: center;
   font-size: 24px;
+  color: white;
 }
 
 .beats-button {
@@ -70,9 +83,9 @@ body {
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
-  color: rgb(246, 246, 246);
+  color: #222222;
   background: rgb(50, 116, 114);
-  background: linear-gradient(348deg, rgb(50, 116, 114) 0%, rgb(70, 134, 139) 28%, rgb(202, 233, 236) 100%);
+  background: white;
   transition: all 0.2s ease-in-out;
 }
 .beats-button-escuchar:hover {
@@ -96,18 +109,25 @@ body {
   transform: rotate(25deg);
 }
 
-.beats-titulo-pagina {
-  padding: 40px 41px 30px;
+.beats-img-section {
+  background-image: url(../../images/beats/portadabeats.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.beats-titulo-pagina h1 {
-  font-size: 30px;
+.beats-img-section h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  filter: brightness(1);
 }
 
 .genero-section {
-  padding: 16px;
+  padding: 8px;
 }
 .genero-section h2 {
   padding-bottom: 15px;
@@ -116,12 +136,13 @@ body {
 .genero-section-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  gap: 16px;
 }
 .genero-section-button {
   text-align: center;
-  padding-top: 54px;
+  padding: 8px;
 }
 .genero-section-button button {
   width: 273px;
@@ -144,18 +165,19 @@ body {
 .serviciospage {
   background-image: url(../images/services/serviciosportada.jpg);
   background-size: cover;
-  height: 90vh;
+  background-position: center;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.968;
 }
 .serviciospage-title {
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
+  filter: brightness(1);
   transition: 1s;
 }
 .serviciospage-title:hover {
@@ -190,8 +212,11 @@ body {
   border-radius: 10px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #d9d9d9;
+  background: rgb(36, 39, 46);
+  background: linear-gradient(348deg, rgb(36, 39, 46) 0%, rgb(29, 46, 69) 65%, rgb(17, 53, 84) 100%);
   transition: all 0.2s ease-in-out;
+  color: white;
+  padding: 16px;
 }
 .serviciospage-grabacion-button-link:hover {
   transform: scale(1.2);
@@ -221,8 +246,11 @@ body {
   padding: 12px 6px 12px;
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgb(36, 39, 46);
+  background: linear-gradient(348deg, rgb(36, 39, 46) 0%, rgb(29, 46, 69) 65%, rgb(17, 53, 84) 100%);
   transition: all 0.2s ease-in-out;
+  color: white;
+  padding: 16px;
 }
 .serviciospage-produccion-button-link:hover {
   transform: scale(1.2);
@@ -250,51 +278,118 @@ body {
   border-radius: 10px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #d9d9d9;
+  background: rgb(36, 39, 46);
+  background: linear-gradient(348deg, rgb(36, 39, 46) 0%, rgb(29, 46, 69) 65%, rgb(17, 53, 84) 100%);
   transition: all 0.2s ease-in-out;
+  color: white;
+  padding: 16px;
 }
 .serviciospage-master-button-link:hover {
   transform: scale(1.2);
 }
 
 .nosotrospage {
-  padding: 40px;
-  text-align: center;
+  padding: 32px;
+  background-image: url(../../images/nosotros/nosotrosportada.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .nosotrospage h1 {
-  padding: 30px;
-  font-size: 45px;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 20px;
+  filter: brightness(1);
+  margin-top: 38px;
 }
 .nosotrospage p {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
-  padding: 30px;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 20px;
+  filter: brightness(1);
+  margin: 16px;
 }
 
 .nosotros-section-imagen img {
   width: 100%;
 }
 
-.contact {
-  padding: 40px;
+.section404 {
+  background-image: url("../../images/FQA/FQAportada.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.contact h1 {
+.section404-h2 {
+  margin: 24px;
+  font-size: 56px;
   text-align: center;
-  padding: 40px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #d9d9d9;
+  border-radius: 20px;
 }
-.contact p {
-  text-align: center;
-  font-size: 20px;
-  padding: 40px;
+.section404-link {
+  font-size: 24px;
+  text-decoration: none;
+  margin: 16px;
+  padding: 16px;
+  background-color: rgb(29, 46, 69);
+  border-radius: 16px;
+  color: #d9d9d9;
 }
 
-.contactpage {
-  background-color: #d9d9d9;
+.contact .contactportada {
+  background-image: url(../../images/contactanos/contactoportada.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px;
 }
-.contactpage-tittle {
+.contact .contactportada h1 {
+  text-align: center;
+  margin-top: 38px;
+  padding: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.contact .contactportada p {
+  text-align: center;
+  font-size: 24px;
+  padding: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.contact .contactpage {
+  background: rgb(36, 39, 46);
+  background: linear-gradient(348deg, rgb(36, 39, 46) 0%, rgb(29, 46, 69) 65%, rgb(17, 53, 84) 100%);
+}
+.contact .contactpage-tittle {
   padding: 20px;
+  color: #d9d9d9;
 }
-.contactpage-form {
+.contact .contactpage-form {
   padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -302,27 +397,27 @@ body {
   grid-template-areas: "nombre apellidos" "email tel" "textarea textarea" "enviar enviar";
   gap: 42px;
 }
-.contactpage-form .nombre {
+.contact .contactpage-form .nombre {
   grid-area: nombre;
   border: none;
 }
-.contactpage-form .apellidos {
+.contact .contactpage-form .apellidos {
   grid-area: apellidos;
   border: none;
 }
-.contactpage-form .email {
+.contact .contactpage-form .email {
   grid-area: email;
   border: none;
 }
-.contactpage-form .tel {
+.contact .contactpage-form .tel {
   grid-area: tel;
   border: none;
 }
-.contactpage-form .textarea {
+.contact .contactpage-form .textarea {
   grid-area: textarea;
   border: none;
 }
-.contactpage-form .enviar {
+.contact .contactpage-form .enviar {
   grid-area: enviar;
   width: 146px;
   height: 63px;
@@ -337,7 +432,8 @@ body {
 
 footer {
   padding: 28px;
-  background-color: #d9d9d9;
+  background-color: #212529;
+  color: #d9d9d9;
 }
 footer .footer-1strow {
   width: 100%;
@@ -353,6 +449,7 @@ footer .footer-1strow-siguenos h4 {
 footer .footer-1strow-siguenos-rrss {
   display: flex;
   gap: 17px;
+  color: #d9d9d9;
 }
 footer .footer-1strow-contacto h4 {
   font-size: 22px;
@@ -364,7 +461,7 @@ footer .footer-1strow-contacto p {
 
 .footer-2ndrow-line hr {
   margin-bottom: 18px;
-  border: 1px solid black;
+  border: 1px solid #d9d9d9;
 }
 
 .footer-3rdrow {
@@ -377,7 +474,21 @@ footer .footer-1strow-contacto p {
   .serviciospage-master {
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   }
-  .contactpage-form {
+  .section404-h2 {
+    font-size: 24px;
+  }
+  .section404-link {
+    font-size: 24px;
+  }
+  .contact .contactportada h1 {
+    padding: 8px;
+    font-size: 19px;
+  }
+  .contact .contactportada p {
+    padding: 8px;
+    font-size: 19px;
+  }
+  .contact .contactpage .contactpage-form {
     padding: 40px;
     display: grid;
     grid-template-columns: 1fr;
@@ -385,27 +496,27 @@ footer .footer-1strow-contacto p {
     grid-template-areas: "nombre" "apellidos" "email" "tel" "textarea" "enviar";
     gap: 42px;
   }
-  .contactpage-form .nombre {
+  .contact .contactpage .contactpage-form .nombre {
     grid-area: nombre;
     border: none;
   }
-  .contactpage-form .apellidos {
+  .contact .contactpage .contactpage-form .apellidos {
     grid-area: apellidos;
     border: none;
   }
-  .contactpage-form .email {
+  .contact .contactpage .contactpage-form .email {
     grid-area: email;
     border: none;
   }
-  .contactpage-form .tel {
+  .contact .contactpage .contactpage-form .tel {
     grid-area: tel;
     border: none;
   }
-  .contactpage-form .textarea {
+  .contact .contactpage .contactpage-form .textarea {
     grid-area: textarea;
     border: none;
   }
-  .contactpage-form .enviar {
+  .contact .contactpage .contactpage-form .enviar {
     grid-area: enviar;
     width: 146px;
     height: 63px;
@@ -423,5 +534,68 @@ footer .footer-1strow-contacto p {
   .serviciospage-produccion,
   .serviciospage-master {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .beats-section {
+    padding: 16px;
+  }
+  .beats-section-titulo {
+    padding-top: 16spx;
+    transition: 1s;
+  }
+  .beats-section-titulo:hover {
+    transform: rotate(25deg);
+  }
+  .beats-section-p {
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .servicios-section {
+    padding: 16px;
+  }
+  .servicios-section-title {
+    padding-top: 30px;
+    transition: 1s;
+  }
+  .servicios-section-title:hover {
+    transform: rotate(25deg);
+  }
+  .beatmasescuchados .beats-img-section h1 {
+    padding: 16px;
+  }
+  .nosotrospage {
+    padding: 24px;
+  }
+  .nosotrospage h1 {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .nosotrospage p {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .section404-h2 {
+    margin: 38px;
+  }
+  .contact .contactportada {
+    padding: 24px;
+  }
+  .contact .contactportada h1 {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .contact .contactportada p {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .contact .contactpage-form {
+    padding: 16px;
+  }
+  footer .footer-1strow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=estilos.css.map */

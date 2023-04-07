@@ -1,6 +1,7 @@
 footer {
   padding: 28px;
-  background-color: $secondarycolor;
+  background-color: $colorfooter;
+  color: $secondarycolor;
 
   .footer-1strow {
     width: 100%;
@@ -17,6 +18,7 @@ footer {
     &-siguenos-rrss {
       display: flex;
       gap: 17px;
+      color: $secondarycolor;
     }
     &-contacto {
       h4 {
@@ -32,7 +34,7 @@ footer {
 
 .footer-2ndrow-line hr {
   margin-bottom: 18px;
-  border: 1px solid black;
+  border: 1px solid $secondarycolor;
 }
 
 .footer-3rdrow {

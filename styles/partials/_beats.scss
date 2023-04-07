@@ -1,16 +1,23 @@
-.beats-titulo-pagina {
-  padding: 40px 41px 30px;
+.beats-img-section {
+  background-image: url(../../images/beats/portadabeats.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
   h1 {
-    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    filter: brightness(1);
   }
 }
 
 .genero-section {
-  padding: 16px;
+  padding: 8px;
 
   h2 {
     padding-bottom: 15px;
@@ -20,13 +27,14 @@
   &-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    gap: 16px;
   }
 
   &-button {
     text-align: center;
-    padding-top: 54px;
+    padding: 8px;
 
     button {
       width: 273px;

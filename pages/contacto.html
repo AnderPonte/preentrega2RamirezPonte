@@ -38,7 +38,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        data-bs-theme="dark"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="../images/logo/logonavbar220x90.png" alt="" />
@@ -71,7 +74,7 @@
                 <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">FAQ</a>
+                <a class="nav-link" href="./404.html">FAQ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -83,21 +86,23 @@
     </header>
     <main>
       <section class="contact">
-        <h1>CONTACTANOS</h1>
-        <p>
-          ¿Tienes preguntas sobre nuestros servicios de producción musical? ¿Te
-          gustaría discutir tu proyecto con nosotros? ¡Estamos aquí para
-          ayudarte! En Nasredo, nos encanta hablar sobre música. Ya sea que
-          estés buscando crear nuevas canciones, producir un podcast o mezclar y
-          masterizar tus grabaciones, nuestro equipo de expertos está listo para
-          ayudarte. Nos aseguramos de trabajar contigo en cada paso del proceso
-          para garantizar que tu visión artística se haga realidad. No dudes en
-          contactarnos a través del formulario a continuación. Estamos ansiosos
-          por escucharte y colaborar contigo en tu próximo proyecto musical.
-          También puedes encontrarnos en las redes sociales o llamarnos
-          directamente al número que aparece en la parte superior de la página.
-          ¡Hablemos de música!
-        </p>
+        <div class="contactportada">
+          <h1>CONTACTANOS</h1>
+          <p>
+            ¿Tienes preguntas sobre nuestros servicios de producción musical?
+            ¿Te gustaría discutir tu proyecto con nosotros? ¡Estamos aquí para
+            ayudarte! En Nasredo, nos encanta hablar sobre música. Ya sea que
+            estés buscando crear nuevas canciones, producir un podcast o mezclar
+            y masterizar tus grabaciones, nuestro equipo de expertos está listo
+            para ayudarte. Nos aseguramos de trabajar contigo en cada paso del
+            proceso para garantizar que tu visión artística se haga realidad. No
+            dudes en contactarnos a través del formulario a continuación.
+            Estamos ansiosos por escucharte y colaborar contigo en tu próximo
+            proyecto musical. También puedes encontrarnos en las redes sociales
+            o llamarnos directamente al número que aparece en la parte superior
+            de la página. ¡Hablemos de música!
+          </p>
+        </div>
         <div class="contactpage">
           <div class="contactpage-tittle"><h2>Enviar un mensaje</h2></div>
           <form class="contactpage-form" action="">
@@ -141,11 +146,32 @@
     <footer>
       <div class="footer-1strow">
         <div class="footer-siguenos">
-          <h4>Seguinos</h4>
-          <div class="footer-icon-rrss">
-            <img src="../images/icon/instagram.png" alt="" />
-            <img src="../images/icon/tiktok.png" alt="" />
-            <img src="../images/icon/youtube.png" alt="" />
+          <h4>Siguenos</h4>
+          <div class="footer-1strow-siguenos-rrss">
+            <img
+              src="../images/icon/instagram.png"
+              alt="encuentranos en instragram"
+              style="
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(147deg)
+                  brightness(104%) contrast(101%);
+              "
+            />
+            <img
+              src="../images/icon/tiktok.png"
+              alt="encuentranos en tiktok"
+              style="
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(147deg)
+                  brightness(104%) contrast(101%);
+              "
+            />
+            <img
+              src="../images/icon/youtube.png"
+              alt="encuentranos en youtube"
+              style="
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(147deg)
+                  brightness(104%) contrast(101%);
+              "
+            />
           </div>
         </div>
         <div class="footer-contacto">
@@ -161,6 +187,18 @@
         <p>Hecho por <a href="">Anderson Ramirez</a></p>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-dark", "navbar-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

@@ -1,6 +1,7 @@
 .hero-home-beats {
   background-image: url(../images/portada/portada.jpg);
   background-size: cover;
+  background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -27,12 +28,19 @@
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background-color: #e5e6e8;
+  background: rgb(36, 39, 46);
+  background: linear-gradient(
+    348deg,
+    rgba(36, 39, 46, 1) 0%,
+    rgba(29, 46, 69, 1) 85%,
+    rgba(17, 53, 84, 1) 100%
+  );
 
   &-titulo {
     padding-top: 30px;
     font-weight: bold;
     font-size: 40px;
+    color: white;
 
     transition: 1s;
     &:hover {
@@ -42,8 +50,9 @@
 
   &-p {
     padding: 40px 40px 15px;
-    text-align: justify;
+    text-align: center;
     font-size: 24px;
+    color: white;
   }
 }
 
@@ -63,14 +72,9 @@
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    color: $maincolor;
+    color: #222222;
     background: rgb(50, 116, 114);
-    background: linear-gradient(
-      348deg,
-      rgba(50, 116, 114, 1) 0%,
-      rgba(70, 134, 139, 1) 28%,
-      rgba(202, 233, 236, 1) 100%
-    );
+    background: white;
 
     transition: all 0.2s ease-in-out;
 
