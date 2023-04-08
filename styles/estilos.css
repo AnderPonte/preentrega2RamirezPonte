@@ -110,7 +110,7 @@ body {
 }
 
 .beats-img-section {
-  background-image: url(../../images/beats/portadabeats.jpg);
+  background-image: url(../images/beats/portadabeats.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -290,7 +290,7 @@ body {
 
 .nosotrospage {
   padding: 32px;
-  background-image: url(../../images/nosotros/nosotrosportada.jpg);
+  background-image: url(../images/nosotros/nosotrosportada.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -325,7 +325,7 @@ body {
 }
 
 .section404 {
-  background-image: url("../../images/FQA/FQAportada.jpg");
+  background-image: url(../images/FQA/FQAportada.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -355,7 +355,7 @@ body {
 }
 
 .contact .contactportada {
-  background-image: url(../../images/contactanos/contactoportada.jpg);
+  background-image: url(../images/contactanos/contactoportada.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
